@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portfolio</title>
+    <link rel="icon" type="image/png" href="https://i.pinimg.com/1200x/56/5b/a8/565ba84b6efd8d72b9d5208d83ff87d3.jpg"> <!--Changes the icon in the browser tab-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="logo.png" alt="Student Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#works">My Works</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="https://mail.google.com/mail/u/1/#inbox?projector=1" alt="Profile Picture" class="profile-pic">
+        <h1>Hello, I'm <span class="highlight">Rafa Teylan</span></h1>
+        <p>Future Mathematician</p>
+    </section>
+
+    <section id="about">
+        <h2 class="h2">About Me</h2>
+        <p>Hello! I'm Rafa. A student that wants to explore the things around me. I like math and I want to know more on how to solve equations. It's complicated but fun! ➕👨‍🔬</p>
+
+        <iframe width="560" height="315" src="https://drive.google.com/drive/folders/1aPtxYx0bgoNG-HrrLmtk-GRDbYA59Gdh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <p style="font-style: italic;">Attached above is a sample ‘This Is Me’ video. This Is Me when I was in Grade 8.</p>
+    </section>
+
+    <section id="works">
+        <h2 class="h2">My Works</h2>
+        <div class="works-gallery">
+
+            <div class="work-item">
+                <a href="file:///C:/Users/Juan%20Rafael%20Teylan/OneDrive/Desktop/Q1_Drill1/Q1_Drill%231" target="blank">
+                <img src="Work1.png" alt="Sample Work" style="border: 2px dashed black;">
+                </a>
+                <p style="text-align: center" class="formtitle">My Personal Slambook</p>
+            </div>
+            <div class="work-item">
+                <ul>
+                    <li>✔ HTML & CSS Projects</li>
+                    <li>✔ Personal Blog</li>
+                    <li>✔ School Portfolio</li>
+                </ul>
+            </div>
+
+            <div class="work-item">
+                <a href="file:///C:/Users/Juan%20Rafael%20Teylan/OneDrive/Desktop/Q1SW1_Teylan_Juan%20Rafael/STAANA_ICT9Ruby_Q1SW1_Teylan_Juan%20Rafael.html" target="blank">
+                <img src="Work2.png" alt="Sample Work" style="border: 2px dashed black;">
+                </a>
+                <p style="text-align: center;" class="formtitle"> My Top 3 Best Movie</p>
+            </div>
+            <div class="work-item">
+                <ul>
+                    <li>✔ HTML & CSS Projects</li>
+                    <li>✔ HTML Forms</li>
+                    <li>✔ List, Links, and Images</li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <h2 class="h2">Contact Me</h2>
+        <div class="form-container">
+                <form>
+                <!-- Input Fields -->
+                <label class="formtitle" for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Rafa Teylan" required>
+                <br>
+                <label class="formtitle" for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="rafa_teylan@gmail.com" required>
+
+                <br>
+                <!-- Radio -->
+                <label class="formtitle">How did you find me?</label>
+                <div class="radio-group">
+                    <input type="radio" id="rate1" name="rating" value="1" required>
+                    <label for="rate1">Facebook</label>
+
+                    <input type="radio" id="rate2" name="rating" value="2">
+                    <label for="rate2">Google</label>
+
+                    <input type="radio" id="rate3" name="rating" value="3">
+                    <label for="rate3">Friends</label>
+                </div>
+
+                <br>
+                <br>
+                    <!-- Checkbox -->
+                <label class="formtitle">Services Interested In:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="action" name="genre" value="Action">
+                    <label for="action">Numbers</label>
+
+                    <input type="checkbox" id="comedy" name="genre" value="Comedy">
+                    <label for="comedy">Math Topics</label>
+
+                    <input type="checkbox" id="drama" name="genre" value="Drama">
+                    <label for="drama">Solving Problems</label>
+                </div>
+                <br>
+                <br>
+
+                <!-- Select -->
+                <label class="formtitle" for="platform"> Rate my Portfolio</label>
+                <select id="platform" name="platform" required>
+                    <option value="">-- Select Rating --</option>
+                    <option value="1">😆 5/5 super amazing!</option>
+                    <option value="2">😀 4/5</option>
+                    <option value="3">🙂 3/5</option>
+                    <option value="4">☹️ 2/5</option>
+                    <option value="5">😔 1/5 please let me know what to improve on!</option>
+                </select>
+                
+                <br>
+                <br>
+                <label class="formtitle" for="reason"> Any Feedback?</label>
+                <textarea id="reason" name="reason" rows="4" placeholder="Please type your honest feedback here so that I can maybe do better next time.." required></textarea>
+                <br>
+
+                <!-- Submit -->
+                <button type="submit"> Submit</button>
+                </form>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <p>&copy; 2025 Rafa Student. All rights reserved.</p>
+    </footer>
+</body>
+</html>
